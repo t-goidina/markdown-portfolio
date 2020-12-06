@@ -1,0 +1,271 @@
+Microsoft Windows [Version 10.0.18363.1139]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\qwete> cd C:\Users\qwete\Desktop\1Git
+
+C:\Users\qwete\Desktop\1Git>git status
+On branch slide
+Your branch is up to date with 'origin/slide'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hj.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\qwete\Desktop\1Git>git commit -a "changed"
+fatal: paths 'changed ...' with -a does not make sense
+
+C:\Users\qwete\Desktop\1Git>git commit -a -m "changed"
+[slide da33ee1] changed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+C:\Users\qwete\Desktop\1Git>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.77 KiB | 2.77 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SunMoon39/github-upload.git
+   a4fa83b..da33ee1  slide -> slide
+
+C:\Users\qwete\Desktop\1Git> cd C:\Users\qwete\Desktop\Hub
+
+C:\Users\qwete\Desktop\Hub>git init
+Initialized empty Git repository in C:/Users/qwete/Desktop/Hub/.git/
+
+C:\Users\qwete\Desktop\Hub>git remote add origin https://github.com/SunMoon39/github-upload.git
+
+C:\Users\qwete\Desktop\Hub>git pull --all
+Fetching origin
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 1), reused 16 (delta 1), pack-reused 0
+Unpacking objects: 100% (16/16), 297.81 KiB | 863.00 KiB/s, done.
+From https://github.com/SunMoon39/github-upload
+ * [new branch]      master     -> origin/master
+ * [new branch]      slide      -> origin/slide
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\qwete\Desktop\Hub>git branch
+
+C:\Users\qwete\Desktop\Hub>git branch -vv
+
+C:\Users\qwete\Desktop\Hub>git branch master
+fatal: Not a valid object name: 'master'.
+
+C:\Users\qwete\Desktop\Hub>git branch origin/slide
+fatal: Not a valid object name: 'master'.
+
+C:\Users\qwete\Desktop\Hub>git branch origin/master
+fatal: Not a valid object name: 'master'.
+
+C:\Users\qwete\Desktop\Hub>git pull origin slide
+From https://github.com/SunMoon39/github-upload
+ * branch            slide      -> FETCH_HEAD
+
+C:\Users\qwete\Desktop\Hub> cd C:\Users\qwete\Desktop\GitHub
+
+C:\Users\qwete\Desktop\GitHub>git remote add origin https://github.com/SunMoon39/github-upload.git
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\qwete\Desktop\GitHub>git init
+Initialized empty Git repository in C:/Users/qwete/Desktop/GitHub/.git/
+
+C:\Users\qwete\Desktop\GitHub>cd C:\Users\qwete\Desktop\GitHub
+
+C:\Users\qwete\Desktop\GitHub>git init
+Reinitialized existing Git repository in C:/Users/qwete/Desktop/GitHub/.git/
+
+C:\Users\qwete\Desktop\GitHub>git remote add origin https://github.com/SunMoon39/github-upload.git
+
+C:\Users\qwete\Desktop\GitHub>git branch lala
+fatal: Not a valid object name: 'master'.
+
+C:\Users\qwete\Desktop\GitHub>git pull all
+fatal: 'all' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\qwete\Desktop\GitHub>git pull --all
+Fetching origin
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 1), reused 16 (delta 1), pack-reused 0
+Unpacking objects: 100% (16/16), 297.81 KiB | 550.00 KiB/s, done.
+From https://github.com/SunMoon39/github-upload
+ * [new branch]      master     -> origin/master
+ * [new branch]      slide      -> origin/slide
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\qwete\Desktop\GitHub>git branch lala
+fatal: Not a valid object name: 'master'.
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\qwete\Desktop\GitHub>git checkout master
+Already on 'master'
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\qwete\Desktop\GitHub>git pull origin master
+From https://github.com/SunMoon39/github-upload
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore4.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\qwete\Desktop\GitHub>git add .gitignore4.gitignore
+warning: LF will be replaced by CRLF in .gitignore4.gitignore.
+The file will have its original line endings in your working directory
+
+C:\Users\qwete\Desktop\GitHub>git commit -m "lala"
+[master 60887f1] lala
+ 1 file changed, 7 insertions(+)
+ create mode 100644 .gitignore4.gitignore
+
+C:\Users\qwete\Desktop\GitHub>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 223 bytes | 223.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SunMoon39/github-upload.git
+   9967d3d..60887f1  master -> master
+
+C:\Users\qwete\Desktop\GitHub>git branch pooo
+
+C:\Users\qwete\Desktop\GitHub>git branch
+* master
+  pooo
+
+C:\Users\qwete\Desktop\GitHub>git check out pooo
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+C:\Users\qwete\Desktop\GitHub>git checkout pooo
+Switched to branch 'pooo'
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch pooo
+nothing to commit, working tree clean
+
+C:\Users\qwete\Desktop\GitHub>git push
+fatal: The current branch pooo has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin pooo
+
+
+C:\Users\qwete\Desktop\GitHub>git push --set-upstream origin pooo
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'pooo' on GitHub by visiting:
+remote:      https://github.com/SunMoon39/github-upload/pull/new/pooo
+remote:
+To https://github.com/SunMoon39/github-upload.git
+ * [new branch]      pooo -> pooo
+Branch 'pooo' set up to track remote branch 'pooo' from 'origin'.
+
+C:\Users\qwete\Desktop\GitHub>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\qwete\Desktop\GitHub>git checkout pooo
+Switched to branch 'pooo'
+Your branch is up to date with 'origin/pooo'.
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch pooo
+Your branch is up to date with 'origin/pooo'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .gitignore.gitignore
+        deleted:    .gitignore2.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\qwete\Desktop\GitHub>git rm .gitignore.gitignore
+rm '.gitignore.gitignore'
+
+C:\Users\qwete\Desktop\GitHub>git rm .gitignore2.gitignore
+rm '.gitignore2.gitignore'
+
+C:\Users\qwete\Desktop\GitHub>git status
+On branch pooo
+Your branch is up to date with 'origin/pooo'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    .gitignore.gitignore
+        deleted:    .gitignore2.gitignore
+
+
+C:\Users\qwete\Desktop\GitHub>git commit -m "delete"
+[pooo bc75670] delete
+ 2 files changed, 14 deletions(-)
+ delete mode 100644 .gitignore.gitignore
+ delete mode 100644 .gitignore2.gitignore
+
+C:\Users\qwete\Desktop\GitHub>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 233 bytes | 233.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SunMoon39/github-upload.git
+   60887f1..bc75670  pooo -> pooo
+
+C:\Users\qwete\Desktop\GitHub>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
